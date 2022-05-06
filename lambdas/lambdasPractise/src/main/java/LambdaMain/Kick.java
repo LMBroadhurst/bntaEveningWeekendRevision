@@ -1,8 +1,8 @@
 package LambdaMain;
 
 @FunctionalInterface
-public interface Run {
+public interface Kick {
 
-    void run();
+    void kick();
 
 }

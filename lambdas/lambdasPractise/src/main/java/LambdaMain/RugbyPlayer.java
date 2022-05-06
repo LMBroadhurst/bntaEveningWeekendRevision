@@ -1,15 +1,19 @@
 package LambdaMain;
 
-public class RugbyPlayer {
+public class RugbyPlayer implements Run, Kick {
 
     private String name;
     private int age;
+    private String team;
+    private boolean carded;
 
 //    Constructor
 
-    public RugbyPlayer(String name, int age) {
+    public RugbyPlayer(String name, int age, String team, boolean carded) {
         this.name = name;
         this.age = age;
+        this.team = team;
+        this.carded = false;
     }
 
 //    Getters and Setters
@@ -29,5 +33,26 @@ public class RugbyPlayer {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getTeam() {
+        return team;
+    }
+
+    public void setTeam(String team) {
+        this.team = team;
+    }
+
+//    Methods
+
+
+    @Override
+    public void run() {
+//        System.out.println("Runs with ball in hands...");
+    }
+
+    @Override
+    public void kick() {
+
     }
 }
