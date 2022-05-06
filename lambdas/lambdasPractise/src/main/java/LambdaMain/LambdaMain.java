@@ -31,6 +31,10 @@ public class LambdaMain {
 
 
 //        Now to do OOP with lambdas.
+        Footballer lewisB = new Footballer("Lewis", 27, "Solihull Moors", false);
+        giveCard(
+                () -> {}
+        );
 
     }
 
@@ -40,6 +44,10 @@ public class LambdaMain {
 
     static void kickBall(Kick x) {
         x.kick();
+    }
+
+    static void giveCard(Footballer x) {
+        x.cardAPlayer();
     }
 
 

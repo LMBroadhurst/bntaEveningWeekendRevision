@@ -1,6 +1,6 @@
 package LambdaMain;
 
-public class Footballer implements Run, Kick {
+public class Footballer implements Run, Kick, CardPlayers {
 
     private String name;
     private int age;
@@ -43,6 +43,14 @@ public class Footballer implements Run, Kick {
         this.team = team;
     }
 
+    public boolean isCarded() {
+        return carded;
+    }
+
+    public void setCarded(boolean carded) {
+        this.carded = carded;
+    }
+
 //    Methods
 
 
@@ -53,6 +61,11 @@ public class Footballer implements Run, Kick {
 
     @Override
     public void kick() {
+
+    }
+
+    @Override
+    public void cardAPlayer() {
 
     }
 }
