@@ -1,32 +1,43 @@
 package org.example._3_usage;
 
 import org.example._2_basics.LogLevel;
+import org.example._2_basics.Month;
+
+import java.util.Scanner;
 
 public class EnumUsageExamples {
-    /*
-        TODO 5 It's time to use some enums, 3 case scenarios:
 
-    1. use an enum variable in an if-else statement
+//     1. use an enum variable in an if-else statement
+
+//    Scanner scanner = new Scanner(System.in);
+//    String input = scanner.nextLine();
+
+    public static void main(String[] args) {
+
+        Month birthdayMonth = null;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter your birthday month:");
+
+        String input = scanner.nextLine();
+
+        if (input.equals("november")) {
+            birthdayMonth = Month.NOVEMBER;
+            System.out.println(birthdayMonth + " is my birthday too");
+        } else if (input.equals("december")) {
+            System.out.println("Santa Claus is coming to town!");
+        } else {
+            System.out.println("Borrrriiingggggg");
+        }
+
+    }
+
+
+    /*
     2. use of Enum in Switch-Case Statements
 
-    First, let's look at some examples, and then your task will be to
-    implement a few more, using enums created in TODO4.
 
-    The examples:
 
-    1. use an enum variable in an if-else logic
 
-    Directions dir = Directions.EAST;
-
-    if(dir == Directions.NORTH) {
-       System.out.println("North");
-    } else if(dir == Directions.EAST) {
-       System.out.println("East");
-    } else if(dir == Directions.SOUTH) {
-       System.out.println("South");
-    } else {
-       System.out.println("West");
-    }
 
     2. use of Enum in Switch-Case Statements (the below example is switch-case an equivalent
     of the if example):

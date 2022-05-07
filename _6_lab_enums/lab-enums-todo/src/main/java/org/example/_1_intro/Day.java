@@ -7,6 +7,7 @@ package org.example._1_intro;
 
     To create an enum, use the enum keyword instead of class.
  */
+
 public enum Day {
     SUNDAY,
     MONDAY,
